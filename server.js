@@ -7,7 +7,9 @@ const app = express() ;
 
 connectDB();
 const corsOptions = {
-    origin:process.env.ALLOWED_CLIENTS.split(',')
+    origin:true,
+    methods:['GET','POST'],
+    //process.env.ALLOWED_CLIENTS.split(',')
     //['http://localhost:3000','http://localhost:5000'],
 }
 
