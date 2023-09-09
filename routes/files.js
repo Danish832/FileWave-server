@@ -17,6 +17,10 @@ let upload = multer({
     limits:{fileSize:1000000*100},
 }).single('myfile');
 
+// router.get('/',(req,res)=>{
+//     res.json({Home:"Your application is live"});
+// })
+
 router.post('/',(req,res)=>{
     // validate request 
     
